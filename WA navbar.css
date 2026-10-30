@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111b21;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.mainNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    height: 59px;
+    padding: 0 16px;
+    background-color: #0b0d0e;
+    color: #e9edef;
+}
+
+
+.leftNav {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex: 1;
+    min-width: 0;
+}
+
+.iconBox {
+    flex: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.groupIcon {
+    background-color: #3a1a22;
+    color: #ff5a6e;
+    font-size: 16px;
+}
+
+.chatInfo {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.name111 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.numbers {
+    font-size: 13px;
+    line-height: 20px;
+    color: #8696a0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.rightNav {
+    flex: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+}
+
+.navList {
+    display: flex;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 20px;
+    color: #e9edef;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navItem:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.addList {
+    height: 36px;
+    padding: 0 14px;
+    border: 1px solid #3b4a54;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.small {
+    font-size: 11px;
+    color: #8696a0;
+}
+
+
+@media (max-width: 640px) {
+    .mainNavbar {
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .addText {
+        display: none;
+    }
+
+    .navItem {
+        padding: 0 8px;
+    }
+}
