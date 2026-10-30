@@ -1,0 +1,70 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: #ffffff;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.mainNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    height: 58px;
+    padding: 0 16px;
+    background-color: #d0e4e1;
+}
+
+/* Logo */
+.logoBox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #1f5f55;
+}
+.logoBox > i { font-size: 26px; }
+
+.logoText { display: flex; flex-direction: column; line-height: 1.1; }
+.brandName { font-size: 15px; font-weight: 800; letter-spacing: 0.5px; }
+.tagline { font-size: 9px; color: #333; }
+
+/* Links */
+.navLinks {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+.navItem {
+    font-size: 12px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.navItem:hover { color: #f26522; }
+.activePage { color: #f26522; }
+
+/* Button */
+.contactBtn {
+    background-color: #f26522;
+    color: #ffffff;
+    padding: 9px 18px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.contactBtn:hover { background-color: #d9541a; }
+
+.menuToggle {
+    display: none;
+    color: #1f5f55;
+    font-size: 20px;
+}
+
+@media (max-width: 900px) {
+    .navLinks { display: none; }
+    .menuToggle { display: block; }
+}
